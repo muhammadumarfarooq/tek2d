@@ -1,0 +1,55 @@
+.rel{
+  position: absolute;
+  top: -50%;
+  left: -1rem;
+
+}
+.img{
+  position: absolute;
+  top: -15%;
+  z-index: 1;
+  left: 1rem;
+  width: 7vw; 
+
+}
+
+/* .img5{
+  top: 20rem;
+  transform: translateY(-1200px);
+}
+
+*/
+.img4{
+  top: -40%;
+  transform: translateY(-1200px);
+animation: upToDown 1.7s forwards ease-out 1.7s;
+}
+
+.img3{
+  top: -35%;
+  transform: translateY(-1200px);
+animation: upToDown 1.7s forwards ease-out 1.4s;
+}
+.img2{
+  top: -31%;
+  transform: translateY(-1200px);
+animation: upToDown 1.7s forwards ease-out 1.1s;
+}
+.img1{
+  top: -25%;
+  transform: translateY(-1200px);
+animation: upToDown 1.7s forwards ease-out 0.8s;
+} 
+
+.img0{
+  top: -19%;
+  transform: translateY(-1200px);
+animation: upToDown 1.7s forwards ease-out 0.5s;
+}
+
+/* Keyframes */
+@keyframes upToDown {
+to {
+transform: translateY(0);
+}
+}

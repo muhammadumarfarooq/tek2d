@@ -2,6 +2,8 @@
   background: #fff;
   position: sticky;
   top: 0;
+  z-index: 1;
+  box-shadow: 0px 0 5px rgba(0,0,0,0.1);
 }
 
 #main-nav .container {
@@ -33,7 +35,34 @@
   transition: border-bottom 0.2s ease-in-out;
 }
 
-#main-nav ul li a:hover {
-  border-bottom: 3px solid #df830c;
+#main-nav ul li a,
+#main-nav ul li a:after,
+#main-nav ul li a:before {
+  transition: all .5s;
 }
 
+#main-nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* stroke */
+#main-nav ul li a
+ {
+  position: relative;
+}
+#main-nav ul li a:after
+ {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: var(--secondary-color);
+  height: 3px;
+}
+#main-nav ul li a:hover:after {
+  width: 100%;
+}

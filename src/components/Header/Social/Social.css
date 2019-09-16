@@ -10,6 +10,7 @@
   grid-template-columns: 7fr 2fr 2fr;
   align-items: center;
   justify-content: flex-end;
+  padding: 0;
 }
 
 .social__email a{
@@ -46,7 +47,7 @@
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid var(--dark-color);
+  border-left: 1px solid var(--dark-color);
   padding: 1.2rem;
 }

@@ -1,0 +1,53 @@
+.showcase{
+  background-color: #fff;
+  z-index: 0;
+  position: relative;
+}
+
+.showcase__inner{
+  padding: 3rem;
+}
+
+.showcase .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* .showcase__content{
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+} */
+
+.showcase__content h1{
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+}
+
+.showcase__detail{
+  font-size: 1.3rem;
+  color: #777;
+  margin-bottom: 1rem;
+
+}
+
+.showcase__detail2{
+  font-size: 1.8rem;
+  color: #777;
+  margin-bottom: 1rem;
+
+
+}
+
+.showcase__detail2 i{
+  font-size: 1.8rem;
+  color: #777;
+
+}
+
+.showcase__pictures{
+  position: relative;
+  overflow: visible;
+}
+
+.showcase__pictures-inner{
+  height: 100%;
+}

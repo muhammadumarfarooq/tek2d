@@ -13,10 +13,10 @@ const Social = () => {
         </div>
         <div>
         <div class="social__icons">
-        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="http://youtube.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.facebook.com/tek2d" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/tek2_d" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/tek2d" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/company/tek2d" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
        </div>
         </div>
         <div className="quote-btn">
