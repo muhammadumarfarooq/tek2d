@@ -1,0 +1,39 @@
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 150px;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+  list-style: none;
+}
+
+#main-nav ul li{
+  margin-right: 0.75rem;
+}
+
+#main-nav ul li a {
+  padding: 0.35rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+#main-nav ul li a:hover {
+  border-bottom: 3px solid #df830c;
+}
+

@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #3224e9;
+  --secondary-color: #ff7e00;
+  --button-color: linear-gradient(to right, #f4ff00, #ffd100, #ff9f00, #ff6900, #fd1717);
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1220px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}  
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
