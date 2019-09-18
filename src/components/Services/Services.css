@@ -1,0 +1,20 @@
+.services{
+  position: relative;
+}
+
+.rocket-wraper{
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  /* bottom: 1rem; */
+}
+
+.services .container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+}
+

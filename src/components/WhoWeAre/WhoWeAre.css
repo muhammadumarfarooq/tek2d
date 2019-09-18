@@ -1,0 +1,23 @@
+.WhoWeAre{
+  height: 60vh;
+  background: teal;
+}
+
+.WhoWeAre .container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+ .WhoWeAre__content{
+  grid-column-end: span 6;
+  background: coral;
+  height: 50vh;
+
+}
+
+.WhoWeAre__img{
+  background: crimson;
+  grid-column-end: span 6;
+  height: 50vh;
+
+} 

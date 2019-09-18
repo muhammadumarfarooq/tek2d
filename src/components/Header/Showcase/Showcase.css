@@ -5,17 +5,17 @@
 }
 
 .showcase__inner{
-  padding: 3rem;
+  padding: 6rem 3rem 0 3rem;
+  
 }
 
 .showcase .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-/* .showcase__content{
-  padding-top: 3rem;
-  padding-bottom: 8rem;
-} */
+.showcase__content{
+  padding-top: 3.5rem;
+}
 
 .showcase__content h1{
   font-size: 3.3rem;
@@ -45,9 +45,9 @@
 
 .showcase__pictures{
   position: relative;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
-.showcase__pictures-inner{
+/* .showcase__pictures-inner{
   height: 100%;
-}
+} */

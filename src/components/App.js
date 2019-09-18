@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './Header/Header';
 
 import './App.css';
+import Services from './Services/Services';
+import WhoWeAre from './WhoWeAre/WhoWeAre';
 
 class App extends React.Component {
   render() {
@@ -9,6 +11,8 @@ class App extends React.Component {
     return(
       <div>
         <Header />
+        <Services />
+        <WhoWeAre />
       </div>
     );
   }

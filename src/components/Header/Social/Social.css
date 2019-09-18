@@ -19,7 +19,7 @@
   padding: 1rem;
   text-decoration: none;
   color: #777;
-  transition: color 0.1s ease-in-out;
+  transition: color 0.3s ease-in-out;
 
 }
 
@@ -32,10 +32,17 @@
   color: var(--primary-color);
 }
 
+.social-icon__wraper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 .social__icons a {
   color: #777;
   margin-right: .5rem;
   transition: color 0.1s ease-in-out;
+  padding: 0.6rem;
 }
 
 .social__icons a:hover {
