@@ -1,23 +1,46 @@
-.WhoWeAre{
-  height: 60vh;
-  background: teal;
-}
+/* .WhoWeAre{
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+} */
 
-.WhoWeAre .container{
+.whoWeAre__Wraper{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  z-index: 1;
 }
 
  .WhoWeAre__content{
   grid-column-end: span 6;
-  background: coral;
-  height: 50vh;
 
 }
 
-.WhoWeAre__img{
-  background: crimson;
+.WhoWeAre__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column-end: span 6;
-  height: 50vh;
+}
 
+.WhoWeAre__content h2{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.WhoWeAre__content p{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.WhoWeAre__img{
+  grid-column-end: span 6;
 } 
+.WhoWeAre__img img{
+  width: 100%;
+  height: 100%;
+} 
+
+
