@@ -1,0 +1,14 @@
+.works {
+  margin-top: var(--section-margin-top);
+  display: flex;
+  justify-content: space-between;
+}
+
+.works .works-wraper {
+  padding-bottom: 5rem;
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 10rem 10rem;
+}

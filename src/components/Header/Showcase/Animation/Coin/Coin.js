@@ -1,23 +1,17 @@
-import React from 'react';
+import React, { Fragment } from "react";
 import "./Coin.css";
-import coinImg from '../../../../../assets/showcase-img/coin.png';
-
-
+import coinImg from "../../../../../assets/showcase-img/coin.png";
 
 const Coin = () => {
-  return(
-    
-<div class="rel">
-{/* <img class="img img5" src={coinImg} alt="img" /> */}
-<img class="img img0" src={coinImg} alt="img" />
-<img class="img img1" src={coinImg} alt="img" />
-<img class="img img2" src={coinImg} alt="img" />
-<img class="img img3" src={coinImg} alt="img" />
-<img class="img img4" src={coinImg} alt="img" />
-</div>
+  return (
+    <Fragment>
+      <img class='coin coin1' src={coinImg} alt='img' />
+      <img class='coin coin2' src={coinImg} alt='img' />
+      <img class='coin coin3' src={coinImg} alt='img' />
+      <img class='coin coin4' src={coinImg} alt='img' />
+      <img class='coin coin5' src={coinImg} alt='img' />
+    </Fragment>
   );
-}
-
-
+};
 
 export default Coin;

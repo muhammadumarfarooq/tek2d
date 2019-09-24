@@ -1,60 +1,56 @@
-
-
-.social{
-  background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.social {
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
 }
 
 .social .container {
   display: grid;
-  grid-template-columns: 7fr 2fr 2fr;
+  grid-template-columns: 8fr 3fr 1.5fr;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0;
 }
 
-.social__email a{
-  border-right: 1px solid rgba(0, 0, 0, 0.1); 
+.social__email a {
+  font-size: 0.875rem;
+  border-right: 1px solid var(--border-color);
   display: inline-block;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   text-decoration: none;
-  color: #777;
+  color: var(--dark-color);
   transition: color 0.3s ease-in-out;
-
 }
 
-.social__email a:hover{
+.social__email a:hover {
   color: var(--secondary-color);
 }
 
-.social__email a i{
+.social__email a i {
   padding-right: 0.3rem;
   color: var(--primary-color);
 }
 
-.social-icon__wraper{
+.social__icons {
   display: flex;
   justify-content: flex-end;
 }
 
-
 .social__icons a {
-  color: #777;
-  margin-right: .5rem;
+  color: var(--dark-color);
+  margin-right: 0.4rem;
   transition: color 0.1s ease-in-out;
-  padding: 0.6rem;
+  padding: 0.4rem;
+  font-size: 0.81rem;
 }
 
 .social__icons a:hover {
   color: var(--secondary-color);
 }
 
-
-.quote-btn a{
+.quote-btn a {
   text-decoration: none;
+  text-align: end;
   color: var(--secondary-color);
   font-weight: bold;
-  border-right: 1px solid var(--dark-color);
-  border-left: 1px solid var(--dark-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   padding: 1.2rem;
 }

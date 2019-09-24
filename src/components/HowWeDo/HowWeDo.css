@@ -1,0 +1,17 @@
+.howWeDo {
+  margin-top: var(--section-margin-top);
+}
+.howWeDo__content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.howWeDo__content p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--dark-color);
+  font-size: 1.08rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}

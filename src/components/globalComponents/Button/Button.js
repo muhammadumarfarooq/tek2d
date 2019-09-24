@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import "./Button.css";
 
-const Button = ({text}) => {
-  return(
-    <div className="btn">
-        <a className="btn-primary" href="">{text}</a>
+const Button = ({ text, padding }) => {
+  return (
+    <div className='btn'>
+      <a style={{ padding }} className='btn-primary' href='#btn'>
+        {text}
+      </a>
     </div>
   );
-}
-
-
+};
 
 export default Button;

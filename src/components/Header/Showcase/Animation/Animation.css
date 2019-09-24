@@ -1,108 +1,83 @@
-
-.alignment{
+.alignment {
   position: relative;
-  /* top: 3rem; */
 }
 
-.person-img{
+.parallax-img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  width: 40vw;
+  width: 95%;
+}
+
+.person-img {
   transform: translateY(1200px);
   animation: downToUp 1.3s forwards ease-out 2s;
 }
 
-/* Keyframes */
-@keyframes downToUp {
-  to {
-    transform: translateY(0);
-  }
-}
-
-.board-img{
+.background-hexagon-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 40vw;
+  width: 100%;
+}
+
+.board-img {
   opacity: 0;
-  animation: opa 0.3s forwards ease-in 1s;
+  animation: boardOpacity 0.3s forwards ease-in 1s;
+}
+
+.calander-img {
+  transform: translateX(1800px);
+  animation: rightToLeft 1.3s forwards ease-out 1.5s;
+}
+
+.three-rings-img {
+  transform: translateY(-1200px);
+  animation: upToDown 1.3s forwards ease-out 0.9s;
+}
+
+.img-coin {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: -15px;
+  width: 15%;
+}
+
+.img-bulb {
+  position: absolute;
+  width: 15%;
+  padding-top: 60%;
+  margin-left: 10%;
+  transform: translateX(-1800px);
+  animation: leftToRight 1.3s forwards ease-out 1.5s;
 }
 
 /* Keyframes */
-@keyframes  opa{
+
+@keyframes boardOpacity {
   to {
     opacity: 1;
   }
 }
 
-.calander-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40vw;
-  transform: translateX(1800px);
-  animation: rightToLeft 1.3s forwards ease-out 1.5s;
-}
-
-/* Keyframes */
 @keyframes rightToLeft {
   to {
     transform: translateY(0);
   }
 }
 
-.three-rings-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40vw;
-  transform: translateY(-1200px);
-  animation: upToDown 1.3s forwards ease-out 0.9s;
-}
-
-/* Keyframes */
-@keyframes upToDown {
-  to {
-    transform: translateY(0);
-  }
-}
-
-.coins-container{
-  height: 40vh;
-  position: relative;
-}
-
-.coins-container div{
-  height: 100%;
-}
-
-.img-bulb{
-  position: relative;
-  left: 10%;
-  padding-top: 60%;
-  width: 7vw;
-  transform: translateX(-1800px);
-  animation: leftToRight 1.3s forwards ease-out 1.5s;
-}
-
-
-
-
-/* Keyframes */
 @keyframes leftToRight {
   to {
     transform: translateY(0);
   }
 }
 
-
-.img-coin{
-  position: relative;
-  /* top: -50%;
-  left: -1rem;
-  width: 7vw; */
+@keyframes downToUp {
+  to {
+    transform: translateY(0);
+  }
 }
 
+@keyframes upToDown {
+  to {
+    transform: translateY(0);
+  }
+}

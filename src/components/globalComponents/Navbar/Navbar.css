@@ -1,9 +1,9 @@
 #main-nav {
-  background: #fff;
   position: sticky;
   top: 0;
   z-index: 1;
-  box-shadow: 0px 0 5px rgba(0,0,0,0.1);
+  background: #fff;
+  /* box-shadow: 0px 0 5px rgba(0,0,0,0.1); */
 }
 
 #main-nav .container {
@@ -18,51 +18,55 @@
 }
 
 #main-nav ul {
-  justify-self: end;
   display: flex;
+  justify-self: end;
   list-style: none;
 }
 
-#main-nav ul li{
-  margin-right: 0.75rem;
+#main-nav ul li {
+  margin-right: 1.2rem;
 }
 
-#main-nav ul li a {
+#main-nav ul li a,
+.services__btn {
   padding: 0.35rem;
   font-weight: bold;
-  color: #333;
   text-decoration: none;
   transition: border-bottom 0.2s ease-in-out;
 }
 
 #main-nav ul li a,
 #main-nav ul li a:after,
-#main-nav ul li a:before {
-  transition: all .5s;
+#main-nav ul li a:before,
+.services__btn,
+.services__btn:after,
+.services__btn:before {
+  transition: all 0.5s;
 }
 
 #main-nav ul li a:hover {
   color: var(--secondary-color);
 }
 
-/* stroke */
-#main-nav ul li a
- {
+/* UnderLine */
+#main-nav ul li a,
+.services__btn {
   position: relative;
 }
-#main-nav ul li a:after
- {
+#main-nav ul li a:after,
+.services__btn:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  /* right: 0; */
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
   background: var(--secondary-color);
   height: 3px;
 }
-#main-nav ul li a:hover:after {
-  width: 100%;
+#main-nav ul li a:hover:after,
+.services__btn:hover:after {
+  width: 40%;
 }

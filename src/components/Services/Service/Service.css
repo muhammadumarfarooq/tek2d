@@ -1,42 +1,48 @@
-
-.service{
+.service {
   grid-column-end: span 4;
   padding: 2.8rem;
-  box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+  box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
   border-radius: 0.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 0;
 }
 
-.service:hover .conta{
-  animation: demo 5s linear infinite;
+.service:hover .conta {
+  animation: movingAround 5s linear infinite;
 }
-.service__icon{
+
+@keyframes movingAround {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.service__icon {
   position: relative;
   margin-bottom: 1.8rem;
-
 }
 
-.conta{
-   width: 150px;
-   height: 150px;
-   position: relative;
-   /* border: 1px solid rgb(0,0,0,0.1); */
-   border-radius: 50%;
-   background: #f4f6fd;
+.conta {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  background: #f4f6fd;
 }
 
-.icons{
+.icons {
+  position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
-  position: absolute;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,107 +50,112 @@
   z-index: 1;
 }
 
-/* .icons i {
-  color: linear-gradient(0deg, #ffc600 0%, #ff4200 100%);
-} */
-
-
-.conta:hover{
-  animation: demo 5s linear infinite;
-}
-  
-@keyframes demo {
-  from{
-    transform: rotate(-360deg);
-  } 
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.octagon{
-	position: absolute;
+.octagon {
+  position: absolute;
   width: 22px;
-	height: 22px;
-	transform: rotate(0);
+  height: 22px;
+  transform: rotate(0);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
 }
 
 .octa1 {
-	top: 8px;   
-	left: 112px;   
-  /* background: #FED373; */
+  top: 8px;
+  left: 112px;
 }
 
 .octa2 {
-	top: 116px;  
-	left: 14px;   
-  /* background: #ff4200; */
+  top: 116px;
+  left: 14px;
 }
 
-.service__content{
-  margin-bottom: 1rem;
+.service__content {
+  margin-bottom: var(--bottom-margin);
 }
 
-.sercices__title{
+.sercices__title {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 0.7rem;
+  margin-bottom: var(--bottom-margin);
 }
 
-.services__detail{
+.services__detail {
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  color: #777;
+  color: var(--dark-color);
 }
 
-.services__btn{
+.services__btn {
   display: inline-block;
   color: #ff7e00;
-  font-weight: bold;
   text-decoration: none;
-
+  padding-bottom: 0.3rem;
 }
 
-.web-development-icon{
-	background: radial-gradient(circle at 33% 100%, #FED373 4%, #ff4200 60%, #ff4200 62%, #FED373); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
+/* Icon Colors */
+
+.web-development-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #ff4200 60%,
+    #ff4200 62%,
+    #fed373
+  );
 }
 
-
-.app-development-icon{
-	background: radial-gradient(circle at 33% 100%, #72e3f2 4%, #3224e9 60%, #3224e9 62%, #72e3f2); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
+.app-development-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #72e3f2 4%,
+    #3224e9 60%,
+    #3224e9 62%,
+    #72e3f2
+  );
 }
 
-
-.internet-marketing-icon{
-	background: radial-gradient(circle at 33% 100%, #8cffed 4%, #009cff 60%, #009cff 62%, #8cffed); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+.internet-marketing-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #8cffed 4%,
+    #009cff 60%,
+    #009cff 62%,
+    #8cffed
+  );
 }
 
-.ui-ux-icon{
-	background: radial-gradient(circle at 33% 100%, #5ad0ff  4%, #3224e9  60%, #3224e9  62%, #5ad0ff ); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+.ui-ux-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #5ad0ff 4%,
+    #3224e9 60%,
+    #3224e9 62%,
+    #5ad0ff
+  );
 }
 
-.branding-icon{
-	background: radial-gradient(circle at 33% 100%, #ff4200 4%, #FED373 60%, #ff4200 62%, #FED373); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
+.branding-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #ff4200 4%,
+    #fed373 60%,
+    #ff4200 62%,
+    #fed373
+  );
 }
 
-.animation-icon{
-	background: radial-gradient(circle at 33% 100%, #8cffed 4%, #009cff 60%, #009cff 62%, #8cffed); 
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+.animation-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #8cffed 4%,
+    #009cff 60%,
+    #009cff 62%,
+    #8cffed
+  );
 }
 
+/* Needs always after the icon colors */
+
+.service-icon-color {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

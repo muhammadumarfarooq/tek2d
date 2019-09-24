@@ -1,23 +1,24 @@
-.btn-primary{
+.btn-primary {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   padding: 1rem 2.5rem;
   font-weight: bold;
-  
-  background-image: linear-gradient(to left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+
+  background-image: linear-gradient(
+    to left,
+    #ffc600 0%,
+    #ff4200 50%,
+    #ffc600 100%
+  );
   background-size: 250% auto;
   background-position: 160% 100%;
   border: none;
   border-radius: 0.3rem;
   transition: background-position 0.5s;
   text-transform: uppercase;
-
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-position: 0 0;
-} 
-
-
-
+}

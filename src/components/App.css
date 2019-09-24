@@ -1,11 +1,11 @@
 :root {
   --primary-color: #3224e9;
   --secondary-color: #ff7e00;
-  --button-color: linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
-  --button-color-hover:linear-gradient(right,#ffc600 0%,#ff4200 50%,#ffc600 100%);
-  --light-color: #f3f3f3;
-  --dark-color: rgba(0, 0, 0, 0.1);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --dark-color: #777;
   --max-width: 1220px;
+  --bottom-margin: 0.5rem;
+  --section-margin-top: 5rem;
 }
 
 * {
@@ -15,10 +15,9 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
-  /* background: var(--light-color); */
-}  
+}
 
 .container {
   max-width: var(--max-width);

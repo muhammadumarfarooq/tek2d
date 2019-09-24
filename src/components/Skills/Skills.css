@@ -1,0 +1,20 @@
+.skills {
+  margin: 5rem 0;
+}
+
+.skills-container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skill-bars {
+  max-width: 600px;
+}
+
+.skill-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
