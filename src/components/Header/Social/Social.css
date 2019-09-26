@@ -6,7 +6,7 @@
 
 .social .container {
   display: grid;
-  grid-template-columns: 8fr 3fr 1.5fr;
+  grid-template-columns: 8fr 3fr 2.2fr;
   align-items: center;
 }
 

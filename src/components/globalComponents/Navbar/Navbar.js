@@ -5,6 +5,7 @@ import logo from "../../../assets/logo.png";
 
 class Navbar extends React.Component {
   state = {
+    shadow: false,
     showMobileNav: false,
     links: [
       { linkTitle: "About Us" },
@@ -22,13 +23,25 @@ class Navbar extends React.Component {
       </a>
     </li>
   ));
-  callMe = () => {
-    this.setState({ showMobileNav: !this.state.showMobileNav });
-  };
+
+  listenScrollEvent = () =>
+    window.scrollY > 70
+      ? this.setState({ shadow: true })
+      : this.setState({ shadow: false });
+
+  callMe = () => this.setState({ showMobileNav: !this.state.showMobileNav });
 
   render() {
+    window.addEventListener("scroll", this.listenScrollEvent);
     return (
-      <nav id='main-nav'>
+      <nav
+        id='main-nav'
+        style={
+          this.state.shadow
+            ? { boxShadow: "8px 8px 12px rgba(0,0,0,0.1)" }
+            : undefined
+        }
+      >
         <div class='container'>
           <img src={logo} alt='TEK2D' class='logo' />
           <ul className='bigMenu'>{this.bigNavbarLinks}</ul>
