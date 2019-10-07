@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import img from "../../../assets/page-title.jpg";
-import Dots from "../../WhoWeAre/Particles/Dots";
+import Dots from "../Particles/Dots";
 
 const PageTitle = ({ componentName }) => {
   return (
@@ -21,7 +21,8 @@ const pageTitleContainer = {
   height: "15rem",
   position: "relative",
   background: `url(${img}) no-repeat center center/cover`,
-  zIndex: 1
+  zIndex: 0,
+  marginBottom: "50rem"
 };
 
 const pageHeaderContent = {

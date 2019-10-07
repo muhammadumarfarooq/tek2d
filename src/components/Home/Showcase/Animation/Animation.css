@@ -1,0 +1,149 @@
+.alignment {
+  position: relative;
+  grid-column-start: span 6;
+}
+
+.parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+}
+
+.person-img {
+  transform: translateY(1200px);
+  animation: downToUp 1.3s forwards ease-out 2s;
+}
+
+.background-hexagon-image {
+  position: absolute;
+  width: 100%;
+}
+
+.board-img {
+  opacity: 0;
+  animation: boardOpacity 0.3s forwards ease-in 1s;
+}
+
+.calander-img {
+  transform: translateX(1800px);
+  animation: rightToLeft 1.3s forwards ease-out 1.5s;
+}
+
+.three-rings-img {
+  transform: translateY(-1200px);
+  animation: upToDown 1.3s forwards ease-out 0.9s;
+}
+
+.img-coin {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: -15px;
+  width: 15%;
+}
+
+.img-bulb {
+  position: absolute;
+  width: 15%;
+  padding-top: 60%;
+  margin-left: 10%;
+  transform: translateX(-1800px);
+  animation: leftToRight 1.3s forwards ease-out 1.5s;
+}
+
+/* Coin */
+
+.coin {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-1200px);
+}
+
+.coin5 {
+  animation: upToDown 1.7s forwards ease-out 1.7s;
+  top: 2.2rem;
+}
+.coin4 {
+  top: 2.9rem;
+  animation: upToDown 1.7s forwards ease-out 1.4s;
+}
+.coin3 {
+  top: 3.6rem;
+  animation: upToDown 1.7s forwards ease-out 1.1s;
+}
+.coin2 {
+  top: 4.3rem;
+  animation: upToDown 1.7s forwards ease-out 0.8s;
+}
+
+.coin1 {
+  top: 5rem;
+  animation: upToDown 1.7s forwards ease-out 0.5s;
+}
+
+/* Keyframes */
+
+@keyframes upToDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes boardOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRight {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes downToUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upToDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+  .alignment {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .coin5 {
+    top: 3.2rem;
+  }
+  .coin4 {
+    top: 3.8rem;
+  }
+  .coin3 {
+    top: 4.2rem;
+  }
+  .coin2 {
+    top: 4.6rem;
+  }
+
+  .coin1 {
+    top: 5rem;
+  }
+}

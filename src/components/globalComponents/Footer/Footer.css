@@ -1,0 +1,120 @@
+/* Footer */
+#main-footer {
+  /* background: #040c5e; */
+  background: url("../../../assets/footer_bg.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  padding-top: 5rem;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+}
+
+/* my styles */
+.about-us {
+  line-height: 2;
+}
+
+.about-us h2,
+.footer-service h3,
+.footer-contact h2,
+.footer-contact p,
+.footer-newsletter h3 {
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+/* cause problem */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  width: 90%;
+}
+
+.list li a {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.list li a:hover {
+  color: #ff7e00 !important;
+}
+.footer-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.footer-icon a {
+  margin-right: 1rem;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon a i {
+  color: #3224e9;
+}
+
+@media (max-width: 920px) {
+  .about-us,
+  .footer-service,
+  .footer-contact,
+  .footer-newsletter {
+    grid-column-start: span 4;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+  }
+}

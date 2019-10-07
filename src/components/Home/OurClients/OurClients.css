@@ -1,0 +1,73 @@
+.OurClients {
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 0;
+}
+
+.OurClients::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f4f6fd url("../../../assets/client-bg.png") no-repeat center
+    center/cover;
+}
+
+.OurClients .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Client Card */
+
+.OurClientCard {
+  margin: 1rem;
+  padding: 1rem;
+  transform: translateY(1rem);
+  cursor: grab;
+}
+
+.client-card-wraper {
+  position: relative;
+  box-shadow: 3px 5px 22px 0 rgba(72, 73, 121, 0.15);
+  border-radius: 8px;
+}
+
+.client-card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.client-card__content {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+.client-img-container {
+  position: absolute;
+  top: -28px;
+  left: -20px;
+}
+
+.client-img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.client-card-icon {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #72e3f2 4%,
+    #3224e9 60%,
+    #3224e9 62%,
+    #72e3f2
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

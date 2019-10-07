@@ -1,0 +1,47 @@
+/* WhoWeAre */
+.whoWeAre .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.WhoWeAre__content {
+  grid-column-end: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.WhoWeAre__content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.WhoWeAre__content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+}
+
+.WhoWeAre__img {
+  grid-column-end: span 6;
+}
+.WhoWeAre__img img {
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .whoWeAre {
+    height: 100% !important;
+  }
+
+  .whoWeAre .container {
+    padding-top: 3rem;
+  }
+
+  .WhoWeAre__img,
+  .WhoWeAre__content {
+    grid-column-end: span 12;
+  }
+}
