@@ -11,3 +11,9 @@
   padding-top: 1rem;
   padding-bottom: 6rem;
 }
+
+@media (max-width: 650px) {
+  .services .container {
+    grid-column-gap: 0;
+  }
+}

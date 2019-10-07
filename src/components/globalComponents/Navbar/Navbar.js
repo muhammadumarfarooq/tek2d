@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 import logo from "../../../assets/logo.png";
@@ -8,19 +9,25 @@ class Navbar extends React.Component {
     shadow: false,
     showMobileNav: false,
     links: [
-      { linkTitle: "About Us" },
-      { linkTitle: "Services +" },
-      { linkTitle: "Our Team" },
-      { linkTitle: "Portfolio" },
-      { linkTitle: "Contact Us" }
+      { linkTitle: "Home", address: "/" },
+      { linkTitle: "About Us", address: "/about" },
+      { linkTitle: "Services +", address: "/services" },
+      { linkTitle: "Our Team", address: "/team" },
+      { linkTitle: "Portfolio", address: "/portfolio" },
+      { linkTitle: "Contact Us", address: "/contact" }
     ]
   };
 
   bigNavbarLinks = this.state.links.map(link => (
     <li id='chek'>
-      <a id='current' href='index.html'>
+      <NavLink
+        id='current'
+        exact
+        activeClassName='selected'
+        to={`${link.address}`}
+      >
         {link.linkTitle}
-      </a>
+      </NavLink>
     </li>
   ));
 
@@ -36,6 +43,7 @@ class Navbar extends React.Component {
     return (
       <nav
         id='main-nav'
+        className='main-nav'
         style={
           this.state.shadow
             ? { boxShadow: "8px 8px 12px rgba(0,0,0,0.1)" }
@@ -43,7 +51,9 @@ class Navbar extends React.Component {
         }
       >
         <div class='container'>
-          <img src={logo} alt='TEK2D' class='logo' />
+          <NavLink to='/'>
+            <img src={logo} alt='TEK2D' class='logo' />
+          </NavLink>
           <ul className='bigMenu'>{this.bigNavbarLinks}</ul>
 
           <div class='div12'>

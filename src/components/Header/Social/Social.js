@@ -3,7 +3,6 @@ import "./Social.css";
 
 class Social extends React.Component {
   state = {
-    color: "white",
     icons: [
       { link: "https://www.facebook.com/tek2d", icon: "facebook-f" },
       { link: "https://twitter.com/tek2_d", icon: "twitter" },

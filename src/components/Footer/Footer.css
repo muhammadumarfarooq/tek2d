@@ -82,3 +82,16 @@ ul {
 .list li a:hover {
   color: #ff7e00 !important;
 }
+
+@media (max-width: 920px) {
+  .about-us,
+  .footer-service,
+  .footer-contact,
+  .footer-newsletter {
+    grid-column-start: span 4;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+  }
+}

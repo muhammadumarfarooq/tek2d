@@ -8,6 +8,7 @@ import OurClientCard from "./OurClientCard/OurClientCard";
 import c1 from "../../assets/clientCard/c1.jpeg";
 import c2 from "../../assets/clientCard/c2.jpg";
 import c3 from "../../assets/clientCard/c3.jpeg";
+import Title from "../globalComponents/Title/Title";
 
 class OurClients extends React.Component {
   state = {
@@ -51,24 +52,24 @@ class OurClients extends React.Component {
   render() {
     return (
       <div className='OurClients'>
-        <div className='container'>
-          <div>
-            <h1 style={{ textAlign: "center" }}>
-              So Far Client's Feedback About TEK2D
-            </h1>
-          </div>
-          <div>
-            <AliceCarousel
-              responsive={this.responsive}
-              autoPlayInterval={2000}
-              mouseDragEnabled
-              autoPlay={true}
-              buttonsDisabled={true}
-            >
-              {this.state.clientCards.map(clientCard => (
-                <OurClientCard clientCard={clientCard} />
-              ))}
-            </AliceCarousel>
+        <div className='checking'>
+          <div className='container'>
+            <div style={{ marginTop: "3rem" }}>
+              <Title title="So Far Client's Feedback About TEK2D" />
+            </div>
+            <div>
+              <AliceCarousel
+                responsive={this.responsive}
+                autoPlayInterval={2000}
+                mouseDragEnabled
+                autoPlay={true}
+                buttonsDisabled={true}
+              >
+                {this.state.clientCards.map(clientCard => (
+                  <OurClientCard clientCard={clientCard} />
+                ))}
+              </AliceCarousel>
+            </div>
           </div>
         </div>
       </div>

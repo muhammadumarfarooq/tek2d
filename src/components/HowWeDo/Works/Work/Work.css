@@ -1,3 +1,8 @@
+.work {
+  display: flex;
+  justify-content: center;
+}
+
 .work-wraper {
   position: relative;
   width: 168px;
@@ -69,4 +74,75 @@
 .content__title h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+}
+
+/* Alignment of different octagons */
+
+.alignment1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.alignment2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.alignment3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.alignment4 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.alignment5 {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (max-width: 850px) {
+  .alignment1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 6;
+  }
+
+  .alignment2 {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .alignment3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 6;
+    grid-row-end: 4;
+  }
+  .alignment4 {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .alignment5 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
 }

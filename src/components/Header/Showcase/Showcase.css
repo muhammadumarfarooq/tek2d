@@ -6,13 +6,14 @@
 
 .showcase .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-bottom: 5rem;
+  grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 10rem;
 }
 
 .showcase__content {
   padding-top: 3rem;
   max-width: 436px;
+  grid-column-start: span 6;
 }
 
 .showcase__content h1 {
@@ -37,6 +38,31 @@
   color: var(--dark-color);
 }
 
-.showcase__pictures {
-  position: relative;
+@media (max-width: 500px) {
+  .showcase .container {
+    grid-template-rows: 15rem 22rem;
+  }
+
+  .showcase__content {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .showcase__content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .showcase__content {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 370px) {
+  .showcase__content {
+    padding-top: 7rem;
+  }
 }

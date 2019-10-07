@@ -2,13 +2,16 @@ import React from "react";
 
 import Particles from "react-particles-js";
 
-const Dots = () => {
+const Dots = ({ number, bgColor }) => {
   return (
-    <div style={{ zIndex: -1 }}>
+    <div style={{ zIndex: 0 }}>
       <Particles
         params={{
           particles: {
-            number: { value: 50, density: { enable: true, value_area: 800 } },
+            number: {
+              value: number,
+              density: { enable: true, value_area: 800 }
+            },
             color: {
               value: ["#3224e9", "#ff4200", "#8cffed", "#FED373"]
             },
@@ -56,9 +59,9 @@ const Dots = () => {
           }
         }}
         style={{
-          width: "100%",
-          height: "50vh",
-          background: `#f4f6fd`,
+          width: "50vh",
+          height: "100%",
+          background: bgColor,
           position: "absolute"
         }}
       />

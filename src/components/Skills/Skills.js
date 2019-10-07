@@ -9,7 +9,7 @@ import skillImg from "../../assets/skills.jpg";
 const Skills = () => {
   return (
     <div className='skills'>
-      <div className='skills-container'>
+      <div className='container'>
         <div className='skill-bars'>
           <Skill
             skillPercent={95}

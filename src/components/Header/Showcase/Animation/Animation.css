@@ -1,5 +1,14 @@
 .alignment {
   position: relative;
+  grid-column-start: span 6;
+}
+
+@media (max-width: 500px) {
+  .alignment {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+  }
 }
 
 .parallax-img {

@@ -9,8 +9,8 @@ import Button from "../globalComponents/Button/Button";
 const WhoWeAre = () => {
   return (
     <div className='whoWeAre' style={particlesStyle}>
-      <Dots />
-      <div className='container whoWeAre__Wraper'>
+      <Dots number={50} bgColor='#f4f6fd' />
+      <div className='container'>
         <div className='WhoWeAre__content'>
           <h2>Who We Are</h2>
           <p>

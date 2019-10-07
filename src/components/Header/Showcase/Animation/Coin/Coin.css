@@ -32,3 +32,22 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 700px) {
+  .coin5 {
+    top: 3.2rem;
+  }
+  .coin4 {
+    top: 3.8rem;
+  }
+  .coin3 {
+    top: 4.2rem;
+  }
+  .coin2 {
+    top: 4.6rem;
+  }
+
+  .coin1 {
+    top: 5rem;
+  }
+}

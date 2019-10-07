@@ -10,6 +10,18 @@
   z-index: 0;
 }
 
+@media (max-width: 920px) {
+  .service {
+    grid-column-end: span 6;
+  }
+}
+
+@media (max-width: 650px) {
+  .service {
+    grid-column-end: span 12;
+  }
+}
+
 .service:hover .conta {
   animation: movingAround 5s linear infinite;
 }

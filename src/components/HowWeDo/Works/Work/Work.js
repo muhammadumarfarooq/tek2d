@@ -2,14 +2,8 @@ import React from "react";
 import "./Work.css";
 
 const Work = ({ work }) => {
-  const style = {
-    gridColumnStart: work.alignment.colS,
-    gridColumnEnd: work.alignment.colE,
-    gridRowStart: work.alignment.rowS,
-    gridRowEnd: work.alignment.rowE
-  };
   return (
-    <div style={style} class='work'>
+    <div class={`work ${work.alignment}`}>
       <div className='work-check'>
         <div class='work-wraper'>
           <div class='work-octagon-wraper'>

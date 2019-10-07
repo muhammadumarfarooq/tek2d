@@ -16,15 +16,11 @@ const Showcase = () => {
           </p>
           <p className='showcase__detail2'>
             if Yes! You Are At Right Place{" "}
-            <span role='img' description='aria-label'>
-              🙂
-            </span>
+            <span role='img' description='aria-label'></span>
           </p>
           <Button text='ABOUT US' />
         </div>
-        <div className='showcase__pictures'>
-          <Animation />
-        </div>
+        <Animation />
       </div>
     </div>
   );
