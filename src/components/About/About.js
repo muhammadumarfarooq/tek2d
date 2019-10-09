@@ -7,6 +7,34 @@ import Title from "../globalComponents/Title/Title";
 import AboutInfo from "./AboutInfo";
 
 import { Helmet } from "react-helmet";
+import ServiceCards from "./ServiceCards";
+
+const style = {
+  bg: {
+    background: "#FF7D00",
+    color: "#fff",
+    fontWeight: "bold",
+    padding: "0 0.3rem",
+    borderRadius: "4px"
+  },
+  bold: {
+    fontWeight: "bold"
+  }
+};
+
+const { bg, bold } = style;
+
+const data = (
+  <span>
+    TEK2D is a Pakistani Company that was founded by{" "}
+    <spam style={bg}>SAMI ULLAH</spam> &amp;{" "}
+    <span style={bg}>MUNEEB UR REHMAN</span>. It has provided service regarding
+    development and many more for the past <span style={bold}>5+ Years</span>.
+    We employed a skilled team of developers in <span style={bold}>2014</span>,
+    Pakistan, who are focused on delivering high-quality software solutions
+    which helps our customers to achieve their certain goals easily.
+  </span>
+);
 
 const About = () => {
   return (
@@ -16,11 +44,9 @@ const About = () => {
       </Helmet>
 
       <PageTitle componentName='About Us' />
-      <Title
-        title='How Do We Do It'
-        titleInfo='TEK2D is a Pakistani Company that was founded by SAMI ULLAH & MUNEEB UR REHMAN. It has provided service regarding development and many more for the past 5+ Years. We employed a skilled team of developers in 2014, Pakistan, who are focused on delivering high-quality software solutions which helps our customers to achieve their certain goals easily.'
-      />
+      <Title title='How Do We Do It' titleInfo={data} />
       <AboutInfo />
+      <ServiceCards />
     </div>
   );
 };

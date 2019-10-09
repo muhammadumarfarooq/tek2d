@@ -60,25 +60,25 @@
 }
 
 .coin5 {
-  animation: upToDown 1.7s forwards ease-out 1.7s;
+  animation: upToDown 1.7s forwards ease-out 3s;
   top: 2.2rem;
 }
 .coin4 {
   top: 2.9rem;
-  animation: upToDown 1.7s forwards ease-out 1.4s;
+  animation: upToDown 1.7s forwards ease-out 2.7s;
 }
 .coin3 {
   top: 3.6rem;
-  animation: upToDown 1.7s forwards ease-out 1.1s;
+  animation: upToDown 1.7s forwards ease-out 2.4s;
 }
 .coin2 {
   top: 4.3rem;
-  animation: upToDown 1.7s forwards ease-out 0.8s;
+  animation: upToDown 1.7s forwards ease-out 2.1s;
 }
 
 .coin1 {
   top: 5rem;
-  animation: upToDown 1.7s forwards ease-out 0.5s;
+  animation: upToDown 1.7s forwards ease-out 1.6s;
 }
 
 /* Keyframes */

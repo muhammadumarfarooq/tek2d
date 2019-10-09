@@ -1,22 +1,22 @@
 import React from "react";
 
 const Service = ({ service }) => (
-  <div class='service'>
+  <div class={`service ${service.styleClasses}`}>
     <div class='service__icon'>
-      <div class='icons'>
+      <div class={`icons ${service.iconShadow}`}>
         <i
-          class={`fas fa-${service.icon}  ${service.iconClass} service-icon-color fa-3x`}
+          class={`fas fa-${service.icon}  ${service.iconClass} service-icon-color fa-2x`}
         ></i>
       </div>
-      <div class='conta'>
+      <div class={`conta ${service.circle}`}>
         <div class='octas'>
           <div
             style={{ background: service.colorA }}
-            class='octagon octa1'
+            class={`${service.octagonClass} octa1`}
           ></div>
           <div
             style={{ background: service.colorB }}
-            class='octagon octa2'
+            class={`${service.octagonClass} octa2`}
           ></div>
         </div>
       </div>

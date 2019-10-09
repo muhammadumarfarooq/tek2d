@@ -38,3 +38,24 @@
     grid-column-end: span 12;
   }
 }
+
+/* Service Card */
+.service-card {
+  position: relative;
+  margin-top: var(--section-margin-top);
+  background: #f4f6fd;
+  padding: 3rem 3rem;
+}
+
+.service-card .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding-top: 1rem;
+  padding: 6rem 0;
+}
+
+.icon-shadow {
+  box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}

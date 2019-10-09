@@ -86,7 +86,7 @@ ul {
 .footer-icon {
   display: flex;
   justify-content: flex-start;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .footer-icon a {
@@ -104,6 +104,23 @@ ul {
 }
 .footer-icon a i {
   color: #3224e9;
+}
+
+/* Card Footer */
+
+.card-iconClass a {
+  background: #3224e9;
+  padding: 18px;
+  transition: 0.3s all ease-in-out;
+}
+
+.card-iconClass a i {
+  color: #fff;
+}
+
+.card-iconClass a:hover {
+  background: #ff7e00;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 920px) {

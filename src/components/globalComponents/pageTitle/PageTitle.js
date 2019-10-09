@@ -21,8 +21,7 @@ const pageTitleContainer = {
   height: "15rem",
   position: "relative",
   background: `url(${img}) no-repeat center center/cover`,
-  zIndex: 0,
-  marginBottom: "50rem"
+  zIndex: 0
 };
 
 const pageHeaderContent = {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Button from "../Button/Button";
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   return (
@@ -14,20 +15,7 @@ const Footer = () => {
             will make you the best website with the team of professionals that
             are there only for you.
           </p>
-          <div className='footer-icon'>
-            <a href=''>
-              <i class='fab fa-facebook-f'></i>
-            </a>
-            <a href=''>
-              <i class='fab fa-twitter'></i>
-            </a>
-            <a href=''>
-              <i class='fab fa-linkedin-in'></i>
-            </a>
-            <a href=''>
-              <i class='fab fa-instagram'></i>
-            </a>
-          </div>
+          <SocialIcons />
         </div>
         <div class='footer-service'>
           <h3>Services</h3>

@@ -1,0 +1,179 @@
+.work-icon-color {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #ff4200 4%,
+    #fed373 60%,
+    #ff4200 62%,
+    #fed373
+  );
+}
+
+.work-icon-color {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.work-card {
+  grid-column-end: span 4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 2.5rem;
+}
+
+.work-card:hover {
+  box-shadow: 7px 5px 30px 0 rgba(72, 73, 121, 0.15);
+  background-color: #ffffff;
+}
+
+.work-card-icon {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.work-card__content {
+  margin-bottom: var(--bottom-margin);
+  text-align: left;
+}
+
+.work-card__title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: var(--bottom-margin);
+  text-align: left;
+}
+
+.work-card__detail {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--dark-color);
+  line-height: 1.9;
+}
+
+.services__btn {
+  display: inline-block;
+  color: #ff7e00;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+}
+/* Service Animation*/
+.service-animation {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* height: 70vh; */
+}
+
+.service-animation-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.service-img {
+  position: absolute;
+  width: 100%;
+}
+
+.big-leaf {
+  transform: translateX(-1800px);
+  animation: leftToRight 1.3s forwards ease-out 1.5s;
+}
+
+.small-leaf {
+  transform: translateX(1800px);
+  animation: rightToLeft 1.3s forwards ease-out 1.5s;
+}
+
+/* 
+.person-img {
+  transform: translateY(1200px);
+  animation: downToUp 1.3s forwards ease-out 2s;
+}
+
+.background-hexagon-image {
+  position: absolute;
+  width: 100%;
+}
+
+.board-img {
+  opacity: 0;
+  animation: boardOpacity 0.3s forwards ease-in 1s;
+}
+
+.calander-img {
+  transform: translateX(1800px);
+  animation: rightToLeft 1.3s forwards ease-out 1.5s;
+}
+
+.three-rings-img {
+  transform: translateY(-1200px);
+  animation: upToDown 1.3s forwards ease-out 0.9s;
+} */
+
+/* Service Animation KeyFrames*/
+
+@keyframes upToDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes boardOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRight {
+  to {
+    transform: translateY(0);
+    /* transform: translateX(-1800px); */
+  }
+}
+
+@keyframes downToUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upToDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 920px) {
+  .work-card {
+    grid-column-end: span 6;
+  }
+}
+
+@media (max-width: 650px) {
+  .work-card .container {
+    grid-column-gap: 0;
+  }
+
+  .work-card {
+    grid-column-end: span 12;
+  }
+}

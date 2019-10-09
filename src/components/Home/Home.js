@@ -9,13 +9,15 @@ import HowWeDo from "./HowWeDo/HowWeDo";
 import Skills from "./Skills/Skills";
 import OurClients from "./OurClients/OurClients";
 
+import skillImg from "../../assets/skills.jpg";
+
 const Home = () => (
   <Fragment>
     <Showcase />
     <Services />
     <WhoWeAre />
     <HowWeDo />
-    <Skills />
+    <Skills skillImg={skillImg} />
     <OurClients />
   </Fragment>
 );

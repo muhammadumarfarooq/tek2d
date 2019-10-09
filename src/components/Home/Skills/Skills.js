@@ -4,9 +4,7 @@ import React from "react";
 import "./Skills.css";
 import Skill from "./Skill";
 
-import skillImg from "../../../assets/skills.jpg";
-
-const Skills = () => {
+const Skills = ({ skillImg }) => {
   return (
     <div className='skills'>
       <div className='container'>

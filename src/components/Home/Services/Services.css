@@ -16,9 +16,6 @@
 
 .service {
   grid-column-end: span 4;
-  padding: 2.8rem;
-  box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
-  border-radius: 0.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -26,7 +23,13 @@
   z-index: 0;
 }
 
-.service:hover .conta {
+.circle {
+  padding: 2.8rem;
+  box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+  border-radius: 0.5rem;
+}
+
+.circle:hover .conta {
   animation: movingAround 5s linear infinite;
 }
 
@@ -45,11 +48,19 @@
 }
 
 .conta {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 5px;
   position: relative;
+}
+
+/* Moving Octagons around Circle Circle */
+.circle-octagon {
   border-radius: 50%;
   background: #f4f6fd;
+  width: 150px;
+  height: 150px;
 }
 
 .icons {

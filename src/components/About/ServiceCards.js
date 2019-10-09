@@ -1,11 +1,9 @@
 import React from "react";
-import "./Services.css";
 
-// import rocketImg from "../../assets/rocket.png";
+import Service from "../Home/Services/Service";
+import Title from "../globalComponents/Title/Title";
 
-import Service from "./Service";
-
-class Services extends React.Component {
+class ServiceCards extends React.Component {
   state = {
     services: [
       {
@@ -15,11 +13,8 @@ class Services extends React.Component {
         icon: "desktop",
         iconClass: "web-development-icon",
         address: "#",
-        colorA: "#ff4200",
-        colorB: "#FED373",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       },
       {
         title: "App Development",
@@ -28,11 +23,8 @@ class Services extends React.Component {
         icon: "mobile-alt",
         iconClass: "app-development-icon",
         address: "#",
-        colorA: "#3224e9",
-        colorB: "#72e3f2",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       },
       {
         title: "Internet Marketing",
@@ -41,11 +33,8 @@ class Services extends React.Component {
         icon: "globe",
         iconClass: "internet-marketing-icon",
         address: "#",
-        colorA: "#8cffed",
-        colorB: "#009cff",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       },
       {
         title: "UI/UX Website Design",
@@ -54,11 +43,8 @@ class Services extends React.Component {
         icon: "pencil-alt",
         iconClass: "ui-ux-icon",
         address: "#",
-        colorA: " #5ad0ff",
-        colorB: "#3224e9",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       },
       {
         title: "Branding",
@@ -67,11 +53,8 @@ class Services extends React.Component {
         icon: "id-card",
         iconClass: "branding-icon",
         address: "#",
-        colorA: "#FED373",
-        colorB: "#ff4200",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       },
       {
         title: "Animation",
@@ -80,21 +63,20 @@ class Services extends React.Component {
         icon: "film",
         iconClass: "animation-icon",
         address: "#",
-        colorA: "#8cffed",
-        colorB: "#009cff",
-        circle: "circle-octagon",
-        styleClasses: "circle",
-        octagonClass: "octagon"
+        iconShadow: "icon-shadow",
+        square: "service-box"
       }
     ]
   };
 
   render() {
     return (
-      <div className='services'>
-        {/* <div className='rocket-wraper'>
-          <img src={rocketImg} alt='rocket-scrlling-fast' />
-        </div> */}
+      <div className='service-card'>
+        <Title
+          title='How Our Team Can Help'
+          titleInfo='TEK2D provides a wide range of unique web development services that will make your business flourish to the maximum.
+          Just ask us and we will make you the best website with the team of professionals that are there only for you.'
+        />
         <div className='container'>
           {this.state.services.map(service => (
             <Service service={service} />
@@ -105,4 +87,4 @@ class Services extends React.Component {
   }
 }
 
-export default Services;
+export default ServiceCards;
