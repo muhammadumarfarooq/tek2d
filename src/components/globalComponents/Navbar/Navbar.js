@@ -19,7 +19,7 @@ class Navbar extends React.Component {
   };
 
   bigNavbarLinks = this.state.links.map(link => (
-    <li id='chek'>
+    <li key={link.linkTitle} id='chek'>
       <NavLink
         id='current'
         exact
@@ -50,26 +50,26 @@ class Navbar extends React.Component {
             : undefined
         }
       >
-        <div class='container'>
+        <div className='container'>
           <NavLink to='/'>
-            <img src={logo} alt='TEK2D' class='logo' />
+            <img src={logo} alt='TEK2D' className='logo' />
           </NavLink>
           <ul className='bigMenu'>{this.bigNavbarLinks}</ul>
 
-          <div class='div12'>
+          <div className='div12'>
             <input
-              class='menu-btn'
+              className='menu-btn'
               onChange={this.callMe}
               type='checkbox'
               id='menu-btn'
             />
-            <label class='menu-icon' for='menu-btn'>
-              <span class='navicon'></span>
+            <label className='menu-icon' htmlFor='menu-btn'>
+              <span className='navicon'></span>
             </label>
           </div>
         </div>
         <ul
-          class='menu'
+          className='menu'
           style={
             this.state.showMobileNav
               ? { maxHeight: "260px" }

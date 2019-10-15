@@ -14,16 +14,17 @@ class Social extends React.Component {
   render() {
     return (
       <div className='social'>
-        <div class='container'>
+        <div className='container'>
           <div className='social__email'>
             <a href='mailto:webmaster@example.com'>
-              <i class='fa fa-envelope' aria-hidden='true'></i>contact@tek2d.com
+              <i className='fa fa-envelope' aria-hidden='true'></i>
+              contact@tek2d.com
             </a>
           </div>
-          <div class='social__icons'>
+          <div className='social__icons'>
             {this.state.icons.map(icon => (
-              <a href={icon.link}>
-                <i class={`fab fa-${icon.icon}`}></i>
+              <a href={icon.link} key={icon.icon}>
+                <i className={`fab fa-${icon.icon}`}></i>
               </a>
             ))}
           </div>

@@ -2,9 +2,10 @@
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 1rem 2.5rem;
-  font-weight: bold;
-
+  padding: 16px 36px;
+  /* padding: 1.125rem 2.25rem; */
+  font-weight: 800;
+  font-weight: 0.875rem;
   background-image: linear-gradient(
     to left,
     #ffc600 0%,

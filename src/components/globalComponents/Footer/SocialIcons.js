@@ -4,17 +4,17 @@ const SocialIcons = ({ iconClass }) => {
   return (
     <div>
       <div className={`footer-icon ${iconClass}`}>
-        <a href=''>
-          <i class='fab fa-facebook-f'></i>
+        <a href='#fb'>
+          <i className='fab fa-facebook-f'></i>
         </a>
-        <a href=''>
-          <i class='fab fa-twitter'></i>
+        <a href='#tw'>
+          <i className='fab fa-twitter'></i>
         </a>
-        <a href=''>
-          <i class='fab fa-linkedin-in'></i>
+        <a href='#link'>
+          <i className='fab fa-linkedin-in'></i>
         </a>
-        <a href=''>
-          <i class='fab fa-instagram'></i>
+        <a href='#ins'>
+          <i className='fab fa-instagram'></i>
         </a>
       </div>
     </div>

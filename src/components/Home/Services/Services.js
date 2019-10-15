@@ -1,7 +1,8 @@
 import React from "react";
 import "./Services.css";
 
-// import rocketImg from "../../assets/rocket.png";
+import rocketImg from "../../../assets/rocket.png";
+import octagons from "../../../assets/octagons.png";
 
 import Service from "./Service";
 
@@ -92,12 +93,16 @@ class Services extends React.Component {
   render() {
     return (
       <div className='services'>
-        {/* <div className='rocket-wraper'>
-          <img src={rocketImg} alt='rocket-scrlling-fast' />
-        </div> */}
+        <div className='rocket-wraper'>
+          <img src={rocketImg} alt='rocket-scrolling-fast' />
+        </div>
+        <div className='octagons-container'>
+          <img src={octagons} alt='3-octagon-images' />
+        </div>
+
         <div className='container'>
           {this.state.services.map(service => (
-            <Service service={service} />
+            <Service key={service.icon} service={service} />
           ))}
         </div>
       </div>

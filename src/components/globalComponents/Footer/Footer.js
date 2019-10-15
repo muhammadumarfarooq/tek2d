@@ -5,9 +5,9 @@ import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   return (
-    <footer id='main-footer' class='py-2'>
-      <div class='container footer-container'>
-        <div class='about-us'>
+    <footer id='main-footer' className='py-2'>
+      <div className='container footer-container'>
+        <div className='about-us'>
           <h2>About Us</h2>
           <p>
             TEK2D provides a wide range of unique web development services that
@@ -17,9 +17,9 @@ const Footer = () => {
           </p>
           <SocialIcons />
         </div>
-        <div class='footer-service'>
+        <div className='footer-service'>
           <h3>Services</h3>
-          <ul class='list'>
+          <ul className='list'>
             <li>
               <a href='#web'>Web Design &amp; Development</a>
             </li>
@@ -40,12 +40,12 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class='footer-contact'>
+        <div className='footer-contact'>
           <h2>Contact</h2>
           <p>Faisalabad, Punjab, Pakistan</p>
           <p>Email: contact@tek2d.com</p>
         </div>
-        <div class='footer-newsletter'>
+        <div className='footer-newsletter'>
           <h3>Newsletter</h3>
           <form>
             <input type='email' placeholder='Enter your email...' />
@@ -53,7 +53,7 @@ const Footer = () => {
           </form>
         </div>
 
-        <div class='footer-copyright'>
+        <div className='footer-copyright'>
           <a href='#policy'>Privacy Policy</a>
           <p>
             Copyright &copy; 2019 Tek2D - Best Technical Web Services. All

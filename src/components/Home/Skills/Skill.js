@@ -25,14 +25,14 @@ const Skill = ({ skillPercent, skillInfo, progressColor }) => {
 
   return (
     <div className='skill'>
-      <div class='skill__info'>
+      <div className='skill__info'>
         <p>{skillInfo}</p>
         <p>
           <CountUp end={skillPercent} duration={2} />%
         </p>
       </div>
 
-      <div class='skill__bar'>
+      <div className='skill__bar'>
         <Rotate></Rotate>
       </div>
     </div>

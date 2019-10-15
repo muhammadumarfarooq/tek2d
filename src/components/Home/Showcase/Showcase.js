@@ -4,6 +4,8 @@ import "./Showcase.css";
 import Button from "../../globalComponents/Button/Button";
 import Animation from "./Animation/Animation";
 
+// import showcaseHexagon from "../../../assets/showcase-hexagon.png";
+
 const Showcase = () => {
   return (
     <div className='showcase'>
@@ -16,10 +18,19 @@ const Showcase = () => {
           </p>
           <p className='showcase__detail2'>
             if Yes! You Are At Right Place{" "}
+            {/* <span role='img' aria-description='foog'>
+              🙂
+            </span> */}
             <span role='img' description='aria-label'></span>
           </p>
           <Button text='ABOUT US' />
         </div>
+        {/* <img
+          className='background-hexagon-image'
+          src={showcaseHexagon}
+          alt='hexagon'
+        /> */}
+
         <Animation />
       </div>
     </div>

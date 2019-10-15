@@ -12,7 +12,7 @@ const OurClientCard = ({ clientCard }) => {
             <h2>{clientCard.name}</h2>
           </div>
           <div>
-            <i class='fas fa-envelope fa-2x client-card-icon'></i>
+            <i className='fas fa-envelope fa-2x client-card-icon'></i>
           </div>
         </div>
         <div className='client-card__content'>

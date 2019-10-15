@@ -1,11 +1,19 @@
+/* Fonts used in website */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800|Open+Sans:600&display=swap");
+
 :root {
+  /* colors */
   --primary-color: #3224e9;
   --secondary-color: #ff7e00;
+  --gray-color: #6f6f6f;
+  --main-color: #fff;
   --border-color: rgba(0, 0, 0, 0.1);
-  --dark-color: #777;
   --max-width: 1220px;
   --bottom-margin: 0.5rem;
   --section-margin-top: 5rem;
+  /* Fonts Weights */
+  --bold: 700;
+  --extra-bold: 800;
 }
 
 * {

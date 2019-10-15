@@ -27,27 +27,24 @@ const subTitle = (
 
 function ServicesPlus() {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Helmet>
         <title>Services &#8211; Tek2D</title>
       </Helmet>
       <PageTitle componentName='Services' />
       <ServicesAnimation />
-      <div style={{ marginTop: "40%" }}>
-        <Title
-          title='Professional WEB For Your Business'
-          titleInfo={subTitle}
-        />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "2rem"
-          }}
-        >
-          <Button text='Contact Us' />
-        </div>
+      {/* <div className='servicesPlus-classContainer'> */}
+      <Title title='Professional WEB For Your Business' titleInfo={subTitle} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem"
+        }}
+      >
+        <Button text='Contact Us' />
       </div>
+      {/* </div> */}
       <WorkCards />
     </div>
   );

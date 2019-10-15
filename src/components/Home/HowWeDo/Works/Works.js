@@ -52,8 +52,8 @@ class Works extends React.Component {
   };
   render() {
     return (
-      <div class='works'>
-        <div class='works-wraper'>
+      <div className='works'>
+        <div className='works-wraper'>
           {this.state.works.map(work => (
             <Work key={work.number} work={work} />
           ))}

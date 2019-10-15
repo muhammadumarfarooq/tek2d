@@ -66,7 +66,10 @@ class OurClients extends React.Component {
                 buttonsDisabled={true}
               >
                 {this.state.clientCards.map(clientCard => (
-                  <OurClientCard clientCard={clientCard} />
+                  <OurClientCard
+                    key={clientCard.name}
+                    clientCard={clientCard}
+                  />
                 ))}
               </AliceCarousel>
             </div>

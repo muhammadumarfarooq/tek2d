@@ -1,31 +1,31 @@
 import React from "react";
 
 const Service = ({ service }) => (
-  <div class={`service ${service.styleClasses}`}>
-    <div class='service__icon'>
-      <div class={`icons ${service.iconShadow}`}>
+  <div className={`service ${service.styleClasses}`}>
+    <div className='service__icon'>
+      <div className={`icons ${service.iconShadow}`}>
         <i
-          class={`fas fa-${service.icon}  ${service.iconClass} service-icon-color fa-2x`}
+          className={`fas fa-${service.icon}  ${service.iconClass} service-icon-color fa-2x`}
         ></i>
       </div>
-      <div class={`conta ${service.circle}`}>
-        <div class='octas'>
+      <div className={`conta ${service.circle}`}>
+        <div className='octas'>
           <div
             style={{ background: service.colorA }}
-            class={`${service.octagonClass} octa1`}
+            className={`${service.octagonClass} octa1`}
           ></div>
           <div
             style={{ background: service.colorB }}
-            class={`${service.octagonClass} octa2`}
+            className={`${service.octagonClass} octa2`}
           ></div>
         </div>
       </div>
     </div>
-    <div class='service__content'>
-      <h3 class='sercices__title'>{service.title}</h3>
-      <div class='services__detail'>{service.detail}</div>
+    <div className='service__content'>
+      <h3 className='sercices__title'>{service.title}</h3>
+      <div className='services__detail'>{service.detail}</div>
     </div>
-    <a href={service.address} class='services__btn'>
+    <a href={service.address} className='services__btn'>
       Read More
     </a>
   </div>

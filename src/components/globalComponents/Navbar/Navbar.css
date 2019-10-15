@@ -8,8 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #fff;
-  /* box-shadow: 0px 0 5px rgba(0,0,0,0.1); */
+  background: var(--main-color);
 }
 
 .main-nav .container {
@@ -50,10 +49,6 @@
   transition: all 0.5s;
 }
 
-/* .main-nav .bigMenu li a:hover {
-  color: var(--secondary-color);
-} */
-
 /* UnderLine */
 .main-nav ul li a,
 .services__btn {
@@ -73,7 +68,7 @@
 }
 .main-nav ul li a:hover:after,
 .services__btn:hover:after {
-  width: 40%;
+  width: 25%;
 }
 
 /* Active Link Styling */
