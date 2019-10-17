@@ -8,7 +8,7 @@ const PageTitle = ({ componentName }) => {
     <div style={pageTitleContainer}>
       <Dots />
       <div style={pageHeaderContent}>
-        <h1>{componentName}</h1>
+        <h1 style={heading}>{componentName}</h1>
         <div>
           <NavLink to='/'>Home</NavLink> {`/ ${componentName}`}
         </div>
@@ -32,6 +32,11 @@ const pageHeaderContent = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center"
+};
+
+const heading = {
+  fontWeight: 800,
+  fontSize: "2.625rem"
 };
 
 export default PageTitle;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageTitle from "../components/globalComponents/pageTitle/PageTitle";
 
 import { Helmet } from "react-helmet";
@@ -9,6 +9,9 @@ import Skills from "../components/Home/Skills/Skills";
 import skillImg from "../assets/team-work.jpg";
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Helmet>

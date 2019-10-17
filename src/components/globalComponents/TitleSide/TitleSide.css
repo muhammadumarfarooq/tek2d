@@ -1,0 +1,20 @@
+.heading_divider {
+  background: red;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.heading_divider::after {
+  background: red;
+  right: -20px;
+
+  border-radius: 2px;
+
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 10px;
+  height: 3px;
+}

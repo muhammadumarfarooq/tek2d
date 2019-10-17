@@ -1,12 +1,13 @@
 .alignment {
   position: relative;
+  grid-column-start: span 6;
   display: grid;
   align-self: center;
   grid-template-columns: repeat(11, 1fr);
 }
 
 .images-container {
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-column-end: 12;
   grid-row-start: 1;
 }
@@ -21,10 +22,20 @@
   animation: downToUp 1.3s forwards ease-out 2s;
 }
 
+.background-hexagon-image-test {
+  position: absolute;
+  top: -5rem;
+  right: -8rem;
+  width: 125%;
+  height: 130%;
+}
+
 .background-hexagon-image {
-  width: 100%;
-  grid-column-start: 7;
-  grid-column-end: 14;
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 12;
   grid-row-start: 1;
 }
 
@@ -160,5 +171,13 @@
 
   .coin1 {
     top: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .background-hexagon-image-test {
+    position: absolute;
+    top: -5rem;
+    right: -7rem;
   }
 }

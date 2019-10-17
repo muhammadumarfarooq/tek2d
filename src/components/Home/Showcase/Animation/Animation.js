@@ -9,7 +9,7 @@ import ringsImg from "../../../../assets/showcase-img/rings.png";
 import calenderImg from "../../../../assets/showcase-img/calender.png";
 import bulbImg from "../../../../assets/showcase-img/bulb.png";
 
-// import showcaseHexagon from "../../../../assets/showcase-hexagon.png";
+import showcaseHexagon from "../../../../assets/showcase-hexagon.png";
 
 import coinImg from "../../../../assets/showcase-img/coin.png";
 
@@ -26,10 +26,21 @@ const Animation = () => {
   }));
 
   return (
+    // <div style={{ position: "relative" }}>
+    // <img
+    //   className='background-hexagon-image-test'
+    //   src={showcaseHexagon}
+    //   alt='hexagon'
+    // />
     <div
       className='alignment'
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
+      <img
+        className='background-hexagon-image-test'
+        src={showcaseHexagon}
+        alt='hexagon'
+      />
       {/* <img
         className='background-hexagon-image'
         src={showcaseHexagon}
@@ -96,6 +107,7 @@ const Animation = () => {
         <img className='img-bulb' src={bulbImg} alt='fourth-bulb-move-img' />
       </animated.div>
     </div>
+    // </div>
   );
 };
 

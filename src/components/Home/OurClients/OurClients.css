@@ -29,10 +29,15 @@
   cursor: grab;
 }
 
+.OurClientCard:active {
+  cursor: grabbing;
+}
+
 .client-card-wraper {
   position: relative;
   box-shadow: 3px 5px 22px 0 rgba(72, 73, 121, 0.15);
   border-radius: 8px;
+  background: #fff;
 }
 
 .client-card__title {

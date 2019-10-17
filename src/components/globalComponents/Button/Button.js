@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Button.css";
 
-const Button = ({ text, padding }) => {
+const Button = ({ text, padding, path }) => {
   return (
     <div className='btn'>
-      <a style={{ padding }} className='btn-primary' href='#btn'>
+      <Link to={path} style={{ padding }} className='btn-primary'>
         {text}
-      </a>
+      </Link>
     </div>
   );
 };

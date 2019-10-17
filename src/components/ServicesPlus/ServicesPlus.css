@@ -87,27 +87,27 @@
 
 .big-leaf {
   transform: translateX(-1800px);
-  animation: leftToRight 2.3s forwards ease-in-out 1s;
+  animation: leftToRight 2.3s forwards ease-in-out 0.4s;
 }
 
 .small-leaf {
   transform: translateX(1800px);
-  animation: rightToLeft 2.3s forwards ease-in-out 1.5s;
+  animation: rightToLeft 2.3s forwards ease-in-out 1.1s;
 }
 
 .laptop-img {
   opacity: 0;
-  animation: boardOpacity 1s forwards ease-out 2s;
+  animation: boardOpacity 1s forwards ease-out 1s;
 }
 
 .cloud-img {
   opacity: 0;
-  animation: boardOpacity 1s forwards ease-out 3.5s;
+  animation: boardOpacity 1s forwards ease-out 2.8s;
 }
 
 .rocket-img {
   transform: translateY(1200px);
-  animation: downToUp 1s forwards ease-out 3.5s;
+  animation: downToUp 1s forwards ease-out 3.3s;
 }
 
 /* Service Animation KeyFrames*/

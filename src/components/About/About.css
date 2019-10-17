@@ -15,7 +15,7 @@
 .about-info-data p {
   font-size: 1.125rem;
   margin-bottom: 1.125rem;
-  color: var(--dark-color);
+  color: var(--gray-color);
 }
 
 .about-image {

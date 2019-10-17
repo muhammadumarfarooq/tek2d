@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 
 import "./Home.css";
 
@@ -11,15 +11,20 @@ import OurClients from "./OurClients/OurClients";
 
 import skillImg from "../../assets/skills.jpg";
 
-const Home = () => (
-  <Fragment>
-    <Showcase />
-    <Services />
-    <WhoWeAre />
-    <HowWeDo />
-    <Skills skillImg={skillImg} />
-    <OurClients />
-  </Fragment>
-);
+const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <Fragment>
+      <Showcase />
+      <Services />
+      <WhoWeAre />
+      <HowWeDo />
+      <Skills skillImg={skillImg} />
+      <OurClients />
+    </Fragment>
+  );
+};
 
 export default Home;

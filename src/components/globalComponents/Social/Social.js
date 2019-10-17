@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Social.css";
 
 class Social extends React.Component {
@@ -16,20 +17,22 @@ class Social extends React.Component {
       <div className='social'>
         <div className='container'>
           <div className='social__email'>
-            <a href='mailto:webmaster@example.com'>
+            <a href='mailto:contact@tek2d.com'>
               <i className='fa fa-envelope' aria-hidden='true'></i>
               contact@tek2d.com
             </a>
           </div>
-          <div className='social__icons'>
-            {this.state.icons.map(icon => (
-              <a href={icon.link} key={icon.icon}>
-                <i className={`fab fa-${icon.icon}`}></i>
-              </a>
-            ))}
-          </div>
-          <div className='quote-btn'>
-            <a href='#quote'>Get a Quote</a>
+          <div className='social_wraper'>
+            <div className='social__icons'>
+              {this.state.icons.map(icon => (
+                <a href={icon.link} key={icon.icon}>
+                  <i className={`fab fa-${icon.icon}`}></i>
+                </a>
+              ))}
+            </div>
+            <div className='quote-btn'>
+              <Link to='/contact'>Get a Quote</Link>
+            </div>
           </div>
         </div>
       </div>

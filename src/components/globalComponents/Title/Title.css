@@ -11,7 +11,7 @@
 .title__content p {
   max-width: 1100px;
   margin: auto;
-  color: var(--dark-color);
+  color: var(--gray-color);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -50,4 +50,5 @@
 
 .title {
   padding-top: 1.1rem;
+  font-weight: var(--extra-bold);
 }

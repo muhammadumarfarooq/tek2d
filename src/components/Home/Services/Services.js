@@ -1,6 +1,10 @@
 import React from "react";
 import "./Services.css";
 
+import { ParallaxProvider } from "react-scroll-parallax";
+
+import { Parallax } from "react-scroll-parallax";
+
 import rocketImg from "../../../assets/rocket.png";
 import octagons from "../../../assets/octagons.png";
 
@@ -93,12 +97,21 @@ class Services extends React.Component {
   render() {
     return (
       <div className='services'>
-        <div className='rocket-wraper'>
-          <img src={rocketImg} alt='rocket-scrolling-fast' />
-        </div>
-        <div className='octagons-container'>
-          <img src={octagons} alt='3-octagon-images' />
-        </div>
+        <ParallaxProvider>
+          <Parallax className='custom-class' y={[350, -20]} tagOuter='figure'>
+            <img src={rocketImg} alt='rocket-scrolling-fast' />
+          </Parallax>
+        </ParallaxProvider>
+
+        <ParallaxProvider>
+          <Parallax
+            className='octagons-container'
+            y={[50, -10]}
+            tagOuter='figure'
+          >
+            <img src={octagons} alt='3-octagon-images' />
+          </Parallax>
+        </ParallaxProvider>
 
         <div className='container'>
           {this.state.services.map(service => (

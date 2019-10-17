@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageTitle from "../globalComponents/pageTitle/PageTitle";
 
 import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Helmet>

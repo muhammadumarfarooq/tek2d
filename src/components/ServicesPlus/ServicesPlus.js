@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ServicesPlus.css";
 
 import PageTitle from "../globalComponents/pageTitle/PageTitle";
@@ -26,6 +26,9 @@ const subTitle = (
 );
 
 function ServicesPlus() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={{ overflow: "hidden" }}>
       <Helmet>
@@ -42,7 +45,7 @@ function ServicesPlus() {
           marginTop: "2rem"
         }}
       >
-        <Button text='Contact Us' />
+        <Button text='Contact Us' path='/contact' />
       </div>
       {/* </div> */}
       <WorkCards />

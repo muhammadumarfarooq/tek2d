@@ -12,15 +12,15 @@
   justify-content: center;
 }
 
-.WhoWeAre__content h2 {
+/* .WhoWeAre__content h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-}
+} */
 
 .WhoWeAre__content p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--dark-color);
+  color: var(--gray-color);
   margin-bottom: 1.5rem;
 }
 
