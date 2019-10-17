@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Social.css";
+
+// Css included in the Navbar.css
 
 class Social extends React.Component {
   state = {

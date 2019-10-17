@@ -18,7 +18,7 @@ class Navbar extends React.Component {
     ]
   };
 
-  bigNavbarLinks = this.state.links.map(link => (
+  NavLinks = this.state.links.map(link => (
     <li key={link.linkTitle} id='chek'>
       <NavLink
         id='current'
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
           <NavLink to='/'>
             <img src={logo} alt='TEK2D' className='logo' />
           </NavLink>
-          <ul className='bigMenu'>{this.bigNavbarLinks}</ul>
+          <ul className='bigMenu'>{this.NavLinks}</ul>
 
           <div className='div12'>
             <input
@@ -76,18 +76,7 @@ class Navbar extends React.Component {
               : { maxHeight: "0" }
           }
         >
-          <li>
-            <a href='#work'>Our Work</a>
-          </li>
-          <li>
-            <a href='#about'>About</a>
-          </li>
-          <li>
-            <a href='#careers'>Careers</a>
-          </li>
-          <li>
-            <a href='#contact'>Contact</a>
-          </li>
+          {this.NavLinks}
         </ul>
       </nav>
     );

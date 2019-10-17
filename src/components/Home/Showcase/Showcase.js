@@ -12,8 +12,6 @@ import Button from "../../globalComponents/Button/Button";
 import Animation from "./Animation/Animation";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-// const trans1 = (x, y) => `translate3d(${x / 30}px,${y / 25}px,0)`;
-// const trans1 = (x, y) => `translate3d(${x / 30}px,${y / 25}px,0)`;
 const trans1 = (x, y) => `translate3d(${x / 90}px,${y / 90}px,0)`;
 
 const Showcase = () => {
@@ -42,10 +40,7 @@ const Showcase = () => {
             Animator &amp; Internet Marketing Team?
           </p>
           <p className='showcase__detail2'>
-            if Yes! You Are At Right Place{" "}
-            {/* <span role='img' aria-description='foog'>
-              🙂
-            </span> */}
+            if Yes! You Are At Right Place 🙂
             <span role='img' description='aria-label'></span>
           </p>
           <Button text='ABOUT US' path='/services' />

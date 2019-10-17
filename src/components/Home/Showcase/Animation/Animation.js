@@ -26,12 +26,6 @@ const Animation = () => {
   }));
 
   return (
-    // <div style={{ position: "relative" }}>
-    // <img
-    //   className='background-hexagon-image-test'
-    //   src={showcaseHexagon}
-    //   alt='hexagon'
-    // />
     <div
       className='alignment'
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
@@ -41,11 +35,7 @@ const Animation = () => {
         src={showcaseHexagon}
         alt='hexagon'
       />
-      {/* <img
-        className='background-hexagon-image'
-        src={showcaseHexagon}
-        alt='hexagon'
-      /> */}
+
       <div className='images-container'>
         <img
           className='board-img parallax-img'
@@ -107,7 +97,6 @@ const Animation = () => {
         <img className='img-bulb' src={bulbImg} alt='fourth-bulb-move-img' />
       </animated.div>
     </div>
-    // </div>
   );
 };
 

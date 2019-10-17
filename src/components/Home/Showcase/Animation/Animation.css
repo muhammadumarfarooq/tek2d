@@ -150,8 +150,6 @@
   .background-hexagon-image {
     width: 90%;
     grid-column-start: span 12;
-    /* grid-column-end: 14; */
-    /* grid-row-start: 1; */
   }
 }
 

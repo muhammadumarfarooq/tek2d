@@ -109,7 +109,14 @@ ul {
 /* Card Footer */
 
 .card-iconClass a {
-  background: #3224e9;
+  /* background: #3224e9; */
+  background: radial-gradient(
+    circle at 33% 100%,
+    #72e3f2 4%,
+    #3224e9 60%,
+    #3224e9 62%,
+    #72e3f2
+  );
   padding: 18px;
   transition: 0.3s all ease-in-out;
 }
@@ -119,7 +126,14 @@ ul {
 }
 
 .card-iconClass a:hover {
-  background: #ff7e00;
+  /* background: #ff7e00; */
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #ff4200 60%,
+    #ff4200 62%,
+    #fed373
+  );
   transform: translateY(-5px);
 }
 
